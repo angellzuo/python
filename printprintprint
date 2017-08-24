@@ -1,0 +1,34 @@
+
+prompt=">>>: "
+def add(a,b):
+	print "let %d + %d" %(a , b)
+	return a + b
+	
+def subtract(a,b):
+	print "let %d - %d" %(a , b)
+	return a - b
+	
+def multiply(a,b):
+	print "Multiply %d * %d" % ( a, b)
+	return a * b
+	
+def divide(a,b):
+	print "divide %d / %d" %(a,b)
+	return a / b
+
+f_num = int(raw_input("give me first num" + prompt))
+#f_num = int(f_num)
+s_num = int(raw_input("give me second num" + prompt))
+#s_num = int(s_num)
+
+r1 = add(f_num,s_num)
+r2 = subtract(f_num,s_num)
+r4 = divide(f_num,s_num)
+r3 = multiply(f_num,s_num)
+
+print "r1: %d, r2: %d, r3: %d, r4: %d" % (r1,r2,r3,r4)
+
+what = add(r1,subtract(r2,multiply(r3,divide(r4,2))))
+print "that becomes: ",what,"can u understand?"
+
+ 
